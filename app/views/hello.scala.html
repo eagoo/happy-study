@@ -1,0 +1,29 @@
+@(c:String, p: String = "")
+
+@main("Welcome to Play") {
+    <div>
+        <ul id="lesson" class="checklist medium" ondragstart="return false">
+            <li>第1课</li>
+            <li class="">第2课</li>
+            <li>第3课</li>
+            <li class="active left-side">第4课</li>
+            <li class="active right-side">第5课</li>
+            <li class="">第6课</li>
+            <li>第7课</li>
+        </ul><input type="hidden" name="lesson" value="4,3">
+    </div>
+
+    <div id="c" style="font-size: 1550%;
+        height: 309px;
+        vertical-align: middle;
+        text-align: center;">
+    @c
+    </div>
+    <div id="pin" style="font-size: 150%;
+    display: none;
+        height: 100px;
+        vertical-align: middle;
+        text-align: center;">
+@p
+    </div>
+}
